@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'simple-buffer',
+  srcs = [
+    'simple_buffer.c',
+  ],
+  deps = [
+    '//:lz4',
+  ],
+)
+
+cxx_binary(
+  name = 'print-version',
+  srcs = [
+    'printVersion.c',
+  ],
+  deps = [
+    '//:lz4',
+  ],
+)
